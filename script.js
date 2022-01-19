@@ -8,10 +8,23 @@ fetch('https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/maste
 
 function createChart(dataset) {
 
-    // Set SVG canvas dimensions
-    const w = 900;
-    const h = 600;
-    const padding = 60;
+    let w;
+    let h;
+    let padding = 60;
+
+    // Set SVG canvas dimensions conditionally based on user's device
+
+    if(window.innerWidth > 992) {
+        w = 900;
+        h = 600;
+    } else if (window.innerWidth > 768) {
+        w = 600;
+        h = 400;
+        
+    } else {
+        w = window.innerWidth;
+        h = 350;
+    }
 
 
     // How tall the bars in the chart should be
