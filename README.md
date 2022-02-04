@@ -26,7 +26,9 @@ No installation steps are required to view this project. To view the page, visit
 
 ## Usage
 
-This webpage is best viewed on desktop devices.
+This webpage is best viewed on desktop devices. Below is a screenshot of the page:
+
+![GDP Visualization](gdp-desktop.png)
 
 ## Credits
 
